@@ -70,7 +70,7 @@ Q2/
 ├── .gitignore
 ├── mix.exs
 ├── lib/
-│   └── parser.ex
+│   └── elixir_parser.ex
 └── test/
     └── parser_test.exs
 ```
