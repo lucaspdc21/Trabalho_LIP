@@ -1,3 +1,0 @@
-defmodule ParserTest do
-
-end
