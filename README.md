@@ -87,7 +87,7 @@ Primeiro, clone este repositório para o seu computador:
 
 ```bash
 git clone https://github.com/lucaspdc21/Trabalho_LIP.git
-cd Q1
+cd Q2
 ```
 
 #### 3.2. Compilando o código e executando os testes
