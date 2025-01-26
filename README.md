@@ -53,3 +53,65 @@ iex> c("main.ex")
 Se você quiser modificar a árvore, pode ajustar os valores diretamente no módulo Main dentro da função criar_arvore/0. Isso permitirá personalizar as chaves, valores e a estrutura da árvore conforme necessário.
 
 # Questão 02 - Parsing
+Este projeto implementa um **parser** simples em **Elixir**. O parser analisa um conjunto de tokens e gera uma árvore sintática (AST) representando o programa.
+
+## Como rodar
+
+### 1. Pré-requisitos
+
+- Elixir instalado em sua máquina. Caso não tenha, siga as instruções para instalar o Elixir:
+  - [Elixir Install Guide](https://elixir-lang.org/install.html)
+
+### 2. Estrutura do Projeto
+
+```
+Q2/
+├── .formatter.exs
+├── .gitignore
+├── mix.exs
+├── lib/
+│   └── parser.ex
+└── test/
+    └── parser_test.exs
+```
+
+- `lib/parser.ex`: Contém a implementação do parser em Elixir.
+- `test/parser_test.exs`: Arquivo com os testes automatizados para validar o comportamento do parser.
+- `mix.exs`: Arquivo de configuração do Mix (o gerenciador de dependências e build do Elixir).
+
+### 3. Passos para executar o projeto
+
+#### 3.1. Clonando o repositório
+
+Primeiro, clone este repositório para o seu computador:
+
+```bash
+git clone https://github.com/lucaspdc21/Trabalho_LIP.git
+cd Q1
+```
+
+#### 3.2. Compilando o código e executando os testes
+
+Agora que você tem o repositório localmente, é hora de compilar o código e rodar os testes para garantir que tudo está funcionando corretamente.
+
+2. **Compile o código**:
+   ```bash
+   mix compile
+   ```
+
+3. **Execute os testes**:
+   ```bash
+   mix test
+   ```
+
+Esse comando irá rodar todos os testes localizados no diretório `test/` e mostrar os resultados no terminal. Se todos os testes passarem, você verá algo como:
+
+```
+Finished in 0.03 seconds
+3 test, 0 failures
+```
+
+Caso algum teste falhe, a saída exibirá detalhes sobre a falha, como qual teste não passou e o motivo.
+
+#### 3.3. Modificando testes
+Você pode criar novos testes em `elixir_parser_test.exs`, os tokens devem ser criados e passados para parse(). Logo em seguida deve ser feito sua comparação com o resultado esperado
